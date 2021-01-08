@@ -1,7 +1,7 @@
 # Javascript
 ## 1. Part1 基础语法
 
-[学习视频链接]: 
+[学习视频链接]: https://space.bilibili.com/1799937394
 
 ### 1.1 简介
 
