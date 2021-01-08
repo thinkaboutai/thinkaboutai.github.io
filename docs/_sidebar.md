@@ -15,5 +15,5 @@
 * Python + 人工智能
 
 * 其它
-    * [Github Page](other/01_githubpage/)
+    * [使用 docsify 搭建笔记博客](other/01_docsify/)
     * [NodeJS 安装](other/02_XXXX)
