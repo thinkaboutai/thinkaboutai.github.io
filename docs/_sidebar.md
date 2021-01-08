@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-* [介绍](/#Headline)
+* [介绍](readme "Think About AI")
 
 * Html5 大前端
     * [Javascript 快速入门](html5/01_Javascript/)
@@ -15,5 +15,5 @@
 * Python + 人工智能
 
 * 其它
-    * [使用 docsify 搭建笔记博客](other/01_docsify/)
+    * [使用 docsify 搭建笔记博客](other/01_docsify/ "使用 docsify 搭建笔记博客")
     * [NodeJS 安装](other/02_XXXX)

@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](logo.jpeg)
+![logo](logo.jpeg "Think About AI")
 
 # Think About AI <small>1.0</small>
 
@@ -11,4 +11,4 @@
 - 众多主题 -->
 
 [GitHub](https://github.com/thinkaboutai)
-[Get Started](#Headline)
+[Get Started](readme)
