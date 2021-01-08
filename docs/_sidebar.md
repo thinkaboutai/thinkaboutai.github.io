@@ -1,5 +1,5 @@
 <!-- docs/_sidebar.md -->
-* [介绍](readme "Think About AI")
+* [介绍](README "Think About AI")
 
 * Html5 大前端
     * [Javascript 快速入门](html5/01_Javascript/)

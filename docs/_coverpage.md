@@ -11,4 +11,4 @@
 - 众多主题 -->
 
 [GitHub](https://github.com/thinkaboutai)
-[Get Started](readme)
+[Get Started](README)
