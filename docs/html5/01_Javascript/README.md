@@ -1,7 +1,7 @@
 # Javascript
 ## 1. Part1 基础语法
 
-[学习视频链接]: https://space.bilibili.com/1799937394
+学习视频链：[https://space.bilibili.com/1799937394](https://space.bilibili.com/1799937394)
 
 ### 1.1 简介
 
@@ -9,13 +9,13 @@
 
 全世界最常见、最受欢迎的开发语言，其增长的速度一致位居前列。
 
-[Stackoverflow 2020调查报告]: https://insights.stackoverflow.com/survey/2020#technology
+Stackoverflow 2020调查报告：[https://insights.stackoverflow.com/survey/2020#technology](https://insights.stackoverflow.com/survey/2020#technology)
 
 ![](01.png)
 
 良好的市场环境，意味着较高的薪资水平：
 
-[职友网2020 前端岗位薪酬]: https://www.jobui.com/salary/quanguo-qianduankaifagongchengshi/
+职友网2020 前端岗位薪酬：[https://www.jobui.com/salary/quanguo-qianduankaifagongchengshi/](https://www.jobui.com/salary/quanguo-qianduankaifagongchengshi/)
 
 ![](02.png)
 
@@ -36,7 +36,7 @@
 
 ### 1.2 环境搭建
 
-[Visual Studio Code]: https://code.visualstudio.com/
+Visual Studio Code：[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
 其它的IDE：Sublime Text / Atom / Webstorm
 

@@ -5,7 +5,7 @@
 ## 关于项目
 我们希望借助Github的影响力，通过笔记、视频和其它项目资源，分享一些学习、工作收获，以帮助更多的爱好互联网IT，爱好编程的朋友走近和踏入这个行业。
 
-[Bilibili入口]: https://space.bilibili.com/1799937394
+Bilibili入口：[https://space.bilibili.com/1799937394](https://space.bilibili.com/1799937394)
 
 你的Follow和Star是对我们最大的鼓励。
 
@@ -20,4 +20,4 @@
 - Python + 人工智能
 
 ## 联系我们
-<img src="me.jpeg" style="zoom:30%;" />
+![](me.png)
