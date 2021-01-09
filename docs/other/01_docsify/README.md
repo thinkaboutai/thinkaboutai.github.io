@@ -1,6 +1,6 @@
 # 使用 docsify 搭建笔记博客
 
-学习视频：
+学习视频：[https://www.bilibili.com/video/BV1kT4y1T7wY](https://www.bilibili.com/video/BV1kT4y1T7wY)
 
 在完成此案例之前，你需要对`git`及`markdown`书写格式有一定基础掌握。
 
