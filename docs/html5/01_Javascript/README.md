@@ -1,7 +1,10 @@
-# Javascript Part1 -- 基础语法
+# Javascript 快速入门
+
+## Part1 -- 基础语法
+
 学习视频链：[https://space.bilibili.com/1799937394](https://space.bilibili.com/1799937394)
 
-## 1. 简介
+### 1. 简介
 
 > Javascript是什么？
 
@@ -32,7 +35,7 @@ Stackoverflow 2020调查报告：[https://insights.stackoverflow.com/survey/2020
 - 文档对象模型（DOM），描述处理网页内容的方法和接口。
 - 浏览器对象模型（BOM），描述与浏览器进行交互的方法和接口。
 
-## 2. 环境搭建
+### 2. 环境搭建
 
 Visual Studio Code：[https://code.visualstudio.com/](https://code.visualstudio.com/)
 
@@ -40,16 +43,16 @@ Visual Studio Code：[https://code.visualstudio.com/](https://code.visualstudio.
 
 安装Live server扩展（插件）：一个非常轻量级的网站服务器，可以让我们开发的时候，即时看到网站运行效果。
 
-## 3. Helloworld
+### 3. Helloworld
 
 > 编写和组织Javascript有哪些形式？
 
 - 行内格式
 - 分离单独的文件
 
-## 4. 变量和常量
+### 4. 变量和常量
 
-### 4.1 变量
+#### 4.1 变量
 
 使用变量可以临时的将数据保存在内存中，我们将数据保存在一处，并给它的内存地址一个名字，将来就可以用这个名字来访问这个数据了。
 
@@ -71,7 +74,7 @@ let score = 90, birthday = '2021-1-1';
 
 > 最佳实践：使用骆驼命名法来定义变量，一行只定义一个变量。
 
-### 4.2 常量
+#### 4.2 常量
 
 常量，即是不能修改的“变量”，如果你不需要重新赋值，常量就是最佳选择。
 
@@ -79,15 +82,15 @@ let score = 90, birthday = '2021-1-1';
 const slogan = 'Think About AI';
 ```
 
-## 5. 数据类型
+### 5. 数据类型
 
-### 5.1 原始数据类型
+#### 5.1 原始数据类型
 
 Primitive Types / Value Types，也称为值类型：
 
 string / number / boolean / undefined / null / symbol / bigInt
 
-### 5.2 动态语言
+#### 5.2 动态语言
 
 Javascript区别于其它很多语言的特点，就在于它是一门动态语言（Dynamic Language）。
 
@@ -102,9 +105,9 @@ flag = 10;
 console.log(flag); //number
 ```
 
-### 5.3 引用类型
+#### 5.3 引用类型
 
-#### 5.3.1 对象
+##### 5.3.1 对象
 
 在 Javascript 里，对象可以被看作是一组属性的集合。
 
@@ -126,7 +129,7 @@ stu['name'] = 'Josh'; // 对象[属性名]
 
 > 最佳实践：最常用的是直接使用`.`操作符来访问属性，但如果我们不知道要访问哪个属性时（它本身是个变量，看实际具体情况而定），我们可以使用中括号语法来进行访问。
 
-#### 5.3.2 数组
+##### 5.3.2 数组
 
 数组，是用来存储和操作一组（多个）元素的容器。
 
@@ -150,7 +153,7 @@ console.log(stus.length); // 3
 console.log(typeof stus); // object
 ```
 
-#### 5.3.3 函数
+##### 5.3.3 函数
 
 function，是一组语句，用来执行某些任务，或者进行一些运算。
 
@@ -183,17 +186,17 @@ let res = add(3, 7);
 console.log(res);
 ```
 
-## 6. 操作符
+### 6. 操作符
 
-## 7. 流程控制
+### 7. 流程控制
 
-## 8. 对象
+### 8. 对象
 
-## 9. 数组
+### 9. 数组
 
-## 10. 函数
+### 10. 函数
 
+## Part2 -- OOP
 
-
-## 2. Part2 OOP
+## Part3 -- BOM & DOM
 
