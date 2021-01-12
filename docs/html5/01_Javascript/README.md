@@ -2,7 +2,7 @@
 
 ## Part1 -- 基础语法
 
-学习视频链：[https://space.bilibili.com/1799937394](https://space.bilibili.com/1799937394)
+学习视频链：[https://www.bilibili.com/video/BV1z54y1s7cK](https://www.bilibili.com/video/BV1z54y1s7cK)
 
 ### 1. 简介
 
