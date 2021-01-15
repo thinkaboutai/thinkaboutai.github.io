@@ -3,7 +3,8 @@
 
 * Html5 大前端
     * [Javascript 快速入门](html5/01_Javascript/)
-    * [Echarts + NodeJS 实现疫情地图](javaee/)
+    * [NodeJS](html5/02_Node/)
+    * [Echarts + NodeJS 实现疫情地图](html5/03_Echarts)
 
 * JavaEE 分布式开发
     * [Java 语法基础 Part1](javaee/)
