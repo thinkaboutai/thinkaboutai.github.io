@@ -2,9 +2,9 @@
 
 ## 1. Part1 - 基础入门
 
-学习视频：[https://space.bilibili.com/1799937394](https://space.bilibili.com/1799937394)
+学习视频：[https://www.bilibili.com/video/BV18K4y1W7wW](https://www.bilibili.com/video/BV18K4y1W7wW)
 
-在学习该知识之前你应该至少掌握Javascript
+在学习该知识之前你应该至少掌握`Javascript`
 
 ### 1.1 简介
 
