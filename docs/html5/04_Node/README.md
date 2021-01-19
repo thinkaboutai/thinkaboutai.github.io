@@ -10,7 +10,7 @@
 
 > What is it?
 
-简称Node，是一个开源的跨平台的Javascript运行环境，主要用来创建后端（back-end）服务，即API（Application Programming Interface）
+简称 Node，是一个开源的跨平台的 Javascript 运行环境，主要用来创建后端（back-end）服务，即 API（Application Programming Interface）
 
 ![](01.png)
 
@@ -23,50 +23,50 @@
 
 > How it works?
 
-在Node出现之前：
+在 Node 出现之前：
 
 ![](03.png)
 
-- 微软Edge的Chakra
-- 谷歌Chrome的v8
-- 火狐Firefox的SpiderMonkey
+- 微软 Edge 的 Chakra
+- 谷歌 Chrome 的 v8
+- 火狐 Firefox 的 SpiderMonkey
 
 ![](02.png)
 
-2009年，`Ryan Dahl`基于运行速度最快的`Chrome V8`，使用`C++`创建了Node：
+2009 年，`Ryan Dahl`基于运行速度最快的`Chrome V8`，使用`C++`创建了 Node：
 
 ![](04.png)
 
 不再具备`window`、`document`，增加了`os`、`fs`、`http`等新特性。
 
-!> Node不是一门编程语言（Programming Language），也不是框架（Framework），而是用来执行Javascript的运行环境（Runtime Environment）。
+!> Node 不是一门编程语言（Programming Language），也不是框架（Framework），而是用来执行 Javascript 的运行环境（Runtime Environment）。
 
 > Where？
 
-Node最大的特性：无阻塞（Non-blocking）/ 异步（Asynchronous）
+Node 最大的特性：无阻塞（Non-blocking）/ 异步（Asynchronous）
 
 ![](05.png)
 
-相较之Asp.net，Rails等框架，要实现异步，需要很多额外的编码工作，而Node默认即是以异步模式工作的。
+相较之 Asp.net，Rails 等框架，要实现异步，需要很多额外的编码工作，而 Node 默认即是以异步模式工作的。
 
 ![](06.png)
 
-- 适用于I/O-intensive型应用，例如大量读写磁盘、网络连接的应用场景
-- 不适用于CPU-intensive型应用，例如视频渲染、图片操作的应用场景
+- 适用于 I/O-intensive 型应用，例如大量读写磁盘、网络连接的应用场景
+- 不适用于 CPU-intensive 型应用，例如视频渲染、图片操作的应用场景
 
 ### 1.2 安装
 
-NodeJS中文官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
+NodeJS 中文官网：[https://nodejs.org/zh-cn/](https://nodejs.org/zh-cn/)
 
-下载LTS（Long-Term Support）版本，别做小白鼠。
+下载 LTS（Long-Term Support）版本，别做小白鼠。
 
-可以使用以下指令来检查Node版本：
+可以使用以下指令来检查 Node 版本：
 
 ```shell
 node --version
 ```
 
-可以使用以下版本进行更新：
+可以使用以下指令基于旧版本进行更新：
 
 ```shell
 npm i -g n
