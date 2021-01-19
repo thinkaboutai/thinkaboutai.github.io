@@ -2,7 +2,7 @@
 
 ![logo](logo.jpeg "Think About AI")
 
-# Think About AI <small>1.3.0</small>
+# Think About AI <small>1.6.0</small>
 
 > 勤于思考 乐于分享
 
