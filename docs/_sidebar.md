@@ -21,5 +21,6 @@
 - Python + 人工智能
 
 - 其它
-  - [使用 docsify 搭建笔记博客](other/01_docsify/ "使用 docsify 搭建笔记博客")
-  - [NodeJS 安装](other/02_XXXX)
+  - [使用 docsify 搭建笔记博客](other/01_Docsify/ "使用 docsify 搭建笔记博客")
+  - [超实用文字图片素材服务](other/02_Lorem/)
+  - [NodeJS 安装](other/03_XXXX/)
