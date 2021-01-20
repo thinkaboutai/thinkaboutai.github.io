@@ -8,7 +8,8 @@
   - [Javascript 快速入门](html5/02_Javascript/)
   - [ReactJS](html5/03_React/)
   - [NodeJS](html5/04_Node/)
-  - [Echarts + NodeJS 实现疫情地图](html5/03_Echarts)
+  - [ES6 常用语法梳理](html5/11_ES6/)
+  - [Echarts + NodeJS 实现疫情地图](html5/03_Echarts/)
 
 - JavaEE 分布式开发
 
