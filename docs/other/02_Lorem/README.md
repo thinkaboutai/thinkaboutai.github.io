@@ -1,5 +1,7 @@
 # 超实用文本图片素材服务
 
+学习视频：[https://www.bilibili.com/video/BV1sX4y1K7cE](https://www.bilibili.com/video/BV1sX4y1K7cE)
+
 ## 1. Lorem Ipsum
 
 > What is Lorem?
