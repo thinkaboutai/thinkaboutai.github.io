@@ -12,7 +12,7 @@
 
 环境:`VSCode` + `Live server`
 
-## 1. let vs var
+## 2. let vs var
 
 使用 `var` 语法定义变量,最大的特点是其作用域只能通过函数体( function scope )来限定.而没有块级作用域( block scope )的概念.
 
@@ -35,7 +35,7 @@ const slogan = 'Think about AI';
 slogan = 'Python'; // error
 ```
 
-## 2. Object
+## 3. Object
 
 Javascript中的对象,实际上就是键值对(key-value)的组合.
 
@@ -57,14 +57,14 @@ const person = {
 };
 ```
 
-## 3. Arrow function
+## 4. Arrow function
 
-## 4. Array.map
+## 5. Array.map
 
-## 5. Object Destructuring
+## 6. Object Destructuring
 
-## 6. Spread Operator
+## 7. Spread Operator
 
-## 7. Class
+## 8. Class
 
-## 8. Module
+## 9. Module
