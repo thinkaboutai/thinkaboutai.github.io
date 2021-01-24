@@ -1,6 +1,6 @@
 # ES6 常用语法梳理
 
-学习视频：
+学习视频：[https://www.bilibili.com/video/BV1Mf4y1C7xV](https://www.bilibili.com/video/BV1Mf4y1C7xV)
 
 ## 1. 简介
 
