@@ -14,7 +14,7 @@
 
 ## 1. let vs var
 
-使用 `var` 语法定义变量,最大的特点是其作用域只能通过函数体(function scope)来限定.而没有块级作用域(block scope)的概念.
+使用 `var` 语法定义变量,最大的特点是其作用域只能通过函数体( function scope )来限定.而没有块级作用域( block scope )的概念.
 
 ```javascript
 function testScope() {
@@ -26,7 +26,7 @@ function testScope() {
 }
 ```
 
-在 ES6 中,使用 `let` 来定义具有块级作用域的变量(更符合现代高级语言普遍特性),使用 `const` 来定义常量(不能重新赋值):
+在 ES6 中,使用 `let` 来定义具有块级作用域的变量( 更符合现代高级语言普遍特性 ),使用 `const` 来定义常量(不能重新赋值):
 
 ```javascript
 let name = 'Jack';
