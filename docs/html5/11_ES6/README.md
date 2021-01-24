@@ -37,7 +37,7 @@ slogan = 'Python'; // error
 
 ## 3. Object
 
-Javascript中的对象,实际上就是键值对(key-value)的组合.
+Javascript中的对象,实际上就是键值对( key - value )的组合.
 
 ```javascript
 const person = {
@@ -47,7 +47,7 @@ const person = {
 };
 ```
 
-如果key的value一样的话,可以简写成:
+如果 key 的 value 一样的话,可以简写成:
 
 ```javascript
 const person = {
