@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-![logo](logo.jpeg "Think About AI")
+![logo](logo.jpeg "Think about AI")
 
-# Think About AI <small>1.6.0</small>
+# Think about AI <small>1.6.0</small>
 
 > 勤于思考 乐于分享
 
