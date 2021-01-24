@@ -8,7 +8,7 @@
 
 在这个专题中,不会对ES6的各项语法做深入探讨,如果需要系统学习,请参考:
 
-阮一峰 ECMAScript6 入门教程:[https://es6.ruanyifeng.com/](https://es6.ruanyifeng.com/)
+MDN Javascript 指南:[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
 
 环境:`VSCode` + `Live server`
 
@@ -58,6 +58,48 @@ const person = {
 ```
 
 ## 4. Arrow function
+
+在 `ES6` 之前:
+
+```javascript
+const increment = function (num) {
+	return num + 1;
+};
+```
+
+使用箭头函数:
+
+```javascript
+const increment = num => num + 1;
+```
+
+> Arrow function & this
+
+当在函数中使用 `this` 的时候,如果用到 `callback` 时,`this` 会绑定到 `window`对象
+
+```javascript
+const person = {
+	name: "Jack",
+	say() {
+		setTimeout(function () {
+			console.log(this);
+		}, 1000);
+	},
+};
+```
+
+由于箭头函数最大的特点在于,它不会重新绑定 `this` ,所以上述可以优化为以下写法:
+
+```javascript
+const person = {
+	name: "Jack",
+	say() {
+		setTimeout(() => {
+			console.log(this);
+		}, 1000);
+	},
+};
+```
 
 ## 5. Array.map
 
