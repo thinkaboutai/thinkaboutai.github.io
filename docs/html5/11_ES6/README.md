@@ -103,10 +103,156 @@ const person = {
 
 ## 5. Array.map
 
+在 ES6 中,数组增加了一些新的方法,其中 map 方法尤其用的之多,结合 ReactJS 的用来动态渲染网页内容非常之好用:
+
+```javascript
+const langs = ["Javascript", "golang", "python"];
+
+const items = langs.map((lang) => `<li>${lang}</li>`);
+console.log(items);
+```
+
 ## 6. Object Destructuring
+
+对象析构,又称为对象解构,可以根据名称对应的规则,把一项或者多项属性,从一个对象中解析出来.
+
+```javascript
+const product = {
+	id: 1,
+	name: "Huawei V10",
+	category: "phone",
+};
+
+// const name = product.name;
+// const price = 3000;
+
+const { name, category: type } = product;
+```
 
 ## 7. Spread Operator
 
+展开操作符,最常用来对数组进行合并、克隆操作
+
+```javascript
+const arr1 = [1, 2, 3];
+const arr2 = [3, 4, 5];
+
+// const arr = arr1.concat(arr2);
+const arr = [...arr1, "x", ...arr2];
+
+const copy = [...arr1];
+```
+
+以上写法同样适用于对象
+
+```javascript
+const stu = {
+	id: 1,
+	name: "Jack",
+};
+const props = {
+	gender: "male",
+	age: 18,
+};
+
+const student = { ...stu, weight: 65, ...props };
+const copy = { ...stu };
+```
+
 ## 8. Class
 
+使用 `JSON` 定义对象的最大短板,就在于对象的方法无法重用,需要书写多次.使用新的类语法来定义可以很好的解决这个问题.
+
+```javascript
+class Person {
+	constructor(id, name, gender = "male") {
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+	}
+
+	walk() {
+		console.log("walk");
+	}
+}
+
+const p1 = new Person(1, "Jack");
+const p2 = new Person(2, "Rose", "female");
+
+console.log(p1, p2);
+```
+
+当方法的逻辑需要进行调整的时候,只需要在一处进行修改就可以了.
+
+与其它 OOP 语言一样,JS 的类语法还可以使用继承进行代码的复用:
+
+```javascript
+class Student extends Person {
+	constructor(id, name, score, gender = "male") {
+		super(id, name, gender);
+		this.score = score;
+	}
+
+	study() {
+		console.log("study");
+	}
+}
+
+const s1 = new Student(1, "Jack", 90);
+console.log(s1);
+```
+
+!> 子类提供构造器的时候,需要使用 super 调用父类构造器
+
 ## 9. Module
+
+在 ES6 中,模块主要使用文件的方式来分割代码
+
+```javascript
+export class Person {
+	constructor(id, name, gender = "male") {
+		this.id = id;
+		this.name = name;
+		this.gender = gender;
+	}
+
+	walk() {
+		console.log("walk");
+	}
+}
+```
+
+
+
+Module 中所有内容均为私有,要提供给外部使用的话,需使用 `export` 导出.
+
+```javascript
+import { Person, other } from "./person";
+
+const p1 = new Person(1, "Jack");
+const p2 = new Person(2, "Rose", "female");
+console.log(p1, p2);
+```
+
+
+
+导出分为命名导出( named export )和默认导出( default export )
+
+```javascript
+//命名导出
+export class Person {}
+
+import { Person } from "./person";
+
+//默认导出
+export default class Person {}
+
+import Person from "./person";
+
+//都有
+export default class Person{}
+export function other(){}
+
+import Person, { other } from "./person"
+```
+
