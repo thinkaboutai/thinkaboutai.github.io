@@ -188,7 +188,9 @@ console.log(res);
 
 ### 6. 操作符
 
-我们在变量和常量上使用操作符,就能形成表达式( statements / expressions ),从而实现一定的逻辑或者完成相应的算法.
+我们在变量和常量上使用操作符,就能形成表达式( Expressions ),从而实现一定的逻辑或者完成相应的算法.
+
+![](03.png)
 
 操作符一共分为以下几种类型:
 
@@ -333,6 +335,34 @@ console.log(res);
 ### 10. 函数
 
 ## Part2 -- OOP
+
+### 1. 简介
+
+> What is OOP?
+
+> 4个核心概念
+
+Encapsulation
+
+Abstraction
+
+Inheritance
+
+Polymorphism
+
+> 课程结构
+
+### 2. Object
+
+### 3. Prototype
+
+### 4. Prototypical Inheritance
+
+### 5. ES6 Class
+
+### 6. Module
+
+### 7.
 
 ## Part3 -- BOM & DOM
 
