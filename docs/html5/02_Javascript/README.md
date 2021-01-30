@@ -188,6 +188,142 @@ console.log(res);
 
 ### 6. 操作符
 
+我们在变量和常量上使用操作符,就能形成表达式( statements / expressions ),从而实现一定的逻辑或者完成相应的算法.
+
+操作符一共分为以下几种类型:
+
+#### 6.1 算数运算符
+
+```javascript
+let x = 5;
+let y = 3;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x / y);
+console.log(x % y); // 求模,求余数
+console.log(x ** y); // 幂运算
+```
+
+自增与自减运算符
+
+```javascript
+console.log(++x); // 先自增,然后输出
+console.log(x++); // 先输出,然后自增
+console.log(x);
+
+console.log(--x); // 先自减,然后输出
+console.log(x--); // 先输出,然后自减
+console.log(x);
+```
+
+#### 6.2 赋值运算符
+
+```javascript
+let x = 5;
+// x = x + 3;
+x += 3;
+console.log(x);
+```
+
+#### 6.3 比较运算符
+
+```javascript
+let x = 1;
+console.log(x > 1);
+console.log(x >= 1);
+console.log(x < 1);
+console.log(x <= 1);
+
+//严格比较:类型与值
+console.log(x === 1);
+console.log(x !== 1);
+//松散比较(会出现类型转换,然后再比较值)
+console.log(1 == "1");
+console.log(true == "1");
+```
+
+三元运算符
+
+```javascript
+let score = 75;
+let result = score >= 60 ? "及格" : "不及格";
+console.log(result);
+```
+
+#### 6.4 逻辑运算符
+
+```javascript
+console.log(true && true);
+console.log(true && false);
+//用户积分大于等于90,并且消费金额大于等于500,即可享受折扣
+let score = 100;
+let amount = 1000;
+let canOfferDiscount = score >= 90 && amount >= 500;
+
+console.log(true || true);
+console.log(false || true);
+//用户积分大于等于90,或者消费金额大于等于500,即可享受折扣
+//let canOfferDiscount = score >= 90 || amount >= 500;
+console.log(canOfferDiscount);
+
+let canNotOfferDiscount = !canOfferDiscount;
+console.log(canNotOfferDiscount);
+```
+
+逻辑操作符操作非布尔值
+
+```javascript
+console.log(false || true);
+console.log(false || 1);
+console.log(false || "Jack");
+
+//Falsy(类假值)
+//false
+//undefined
+//null
+//0
+//''
+//NaN
+function getValue() {
+	// some code
+	// return 1;
+	return null;
+}
+
+let value = getValue() || 100;
+console.log(value);
+```
+
+#### 6.5 位运算符
+
+```javascript
+// 8 bit => 1 byte
+// 1 => 00000001
+// 2 => 00000010
+// | => 00000011 => 3
+// & => 00000000 => 0
+console.log(1 | 2);
+console.log(1 & 2);
+
+// read write execute
+// r			00000100
+// rw			00000110
+// rwe		00000111
+
+const read = 4;
+const write = 2;
+const execute = 1;
+
+let my = 0;
+//授权
+my = my | read | write;
+console.log(my);
+//判断是否具有某个权限
+const res = (my & write)? '可写' : '不可写';
+console.log(res);
+```
+
 ### 7. 流程控制
 
 ### 8. 对象
