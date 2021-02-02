@@ -13,9 +13,7 @@
 
 - JavaEE 分布式开发
 
-  - [Java 语法基础 Part1](javaee/)
-  - [Java 语法基础 Part2](javaee/)
-  - [Java 语法基础 Part3](javaee/)
+  - [Java 快速入门](javaee/01_Java)
 
 - BigData 大数据
 
