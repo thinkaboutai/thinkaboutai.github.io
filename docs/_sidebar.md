@@ -13,7 +13,7 @@
 
 - JavaEE 分布式开发
 
-  - [Java 快速入门](javaee/01_Java)
+  - [Java 快速入门](javaee/01_Java/)
 
 - BigData 大数据
 
