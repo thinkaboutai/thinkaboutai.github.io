@@ -326,7 +326,168 @@ const res = (my & write)? '可写' : '不可写';
 console.log(res);
 ```
 
+#### 6.6 运算符优先级
+
+所有运算符都具有一定的优先级,除此以外,我们可以通过使用括号,来提升优先级.
+
+```javascript
+//let x = 1 + 2 * 3;
+let x = (1 + 2) * 3;
+console.log(x);
+```
+
+#### 6.7 练习
+
+交换2个变量的值
+
+```javascript
+let a = 1;
+let b = 2;
+
+let c = a;
+let a = b;
+let b = c;
+console.log(a, b);
+```
+
 ### 7. 流程控制
+
+#### 7.1 if-else vs switch-case
+
+If-else
+
+```javascript
+let score = 75;
+if (score >= 0 && score < 60) {
+	console.log("不及格");
+} else if (score >= 60 && score < 70) {
+	console.log("及格");
+} else if (score >= 70 && score <= 100) {
+	console.log("优良");
+} else {
+	console.log("无效成绩");
+}
+```
+
+switch-case
+
+```javascript
+let grade = "及格";
+switch (grade) {
+	case "不及格":
+		console.log("C");
+		break;
+	case "及格":
+		console.log("B");
+		break;
+	case "优良":
+		console.log("A");
+		break;
+	default:
+		console.log("无效等级");
+		break;
+}
+```
+
+#### 7.2 for
+
+```javascript
+for (let i = 0; i < 5; i++) {
+	console.log("Hello world", i);
+}
+
+for (let i = 0; i <= 5; i++) {
+	if (i % 2 !== 0) console.log(i);
+}
+```
+
+#### 7.3 while vs do-while
+
+while
+
+```javascript
+let i = 0;
+while (i <= 5) {
+	if (i % 2 !== 0) console.log(i);
+	i++;
+}
+```
+
+do-while
+
+```javascript
+let i = 0;
+do {
+	if (i % 2 !== 0) console.log(i);
+	i++;
+} while (i <= 5);
+```
+
+#### 7.4 for-in vs for-of
+
+for-in
+
+```javascript
+const person = {
+	id: 1,
+	name: "Jack",
+};
+
+for (const key in person) {
+	console.log(key, person[key]);
+}
+
+const arr = ["a", "b", "c"];
+for (const index in arr) {
+	console.log(index, arr[index]);
+}
+```
+
+for-of
+
+```javascript
+const arr = ["a", "b", "c"];
+for (const item of arr) {
+	console.log(item);
+}
+```
+
+#### 7.5 break and continue
+
+```javascript
+let i = 0;
+while (i <= 10) {
+	// if (i === 5) break;
+	if (i % 2 === 0) {
+		i++;
+		continue;
+	}
+	console.log(i);
+	i++;
+}
+```
+
+#### 7.6 练习
+
+求最大值
+
+fizzBuzz
+
+超速罚分
+
+奇数偶数
+
+计数器
+
+类型检查
+
+求和
+
+成绩统计
+
+输出星号
+
+求素数
 
 ### 8. 对象
 
