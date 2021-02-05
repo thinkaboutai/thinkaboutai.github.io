@@ -2,6 +2,13 @@
 
 - [介绍](README "Think About AI")
 
+- 公共课程
+
+  - [MySQL](public/01_Mysql/)
+  - [Git](public/02_Git/)
+  - [数据结构与算法](public/03_Datastructure/)
+  - [设计模式](public/04_Designpattern/)
+
 - Html5 大前端
 
   - [HTML5 & CSS3](html5/01_Html/)
