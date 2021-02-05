@@ -9,7 +9,7 @@
   - [数据结构与算法](public/03_Datastructure/)
   - [设计模式](public/04_Designpattern/)
 
-- Html5 大前端
+- HTML5 大前端
 
   - [HTML5 学习路线](html5/00_Paths/)
   - [HTML5 & CSS3](html5/01_Html/)
