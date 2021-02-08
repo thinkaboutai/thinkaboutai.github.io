@@ -27,7 +27,8 @@
 
 - Python + 人工智能
 
-- 其它
+- 实用技能
   - [使用 docsify 搭建笔记博客](other/01_Docsify/ "使用 docsify 搭建笔记博客")
   - [超实用文字图片素材服务](other/02_Lorem/)
+  - [Typora](other/03_Typora)
   - [NodeJS 安装](other/03_XXXX/)
