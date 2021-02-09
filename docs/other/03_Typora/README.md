@@ -4,15 +4,13 @@
 
 ## 简介
 
-**Typora** 是一款强大、免费且的 `Markdown` 编辑器。既适合新手处理笔记，又适合专业人士制作基于 `Markdown` 和 `HTML` 的轻量级文档。
+**Typora** 是一款强大、免费的 `Markdown` 编辑器。既适合新手处理笔记，又适合专业人士制作基于 `Markdown` 和 `HTML` 的轻量级文档。
 
 官方地址：[https://www.typora.io/](https://www.typora.io/)
 
-
-
 > 关于 **Markdown**
 
-Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（ John Gruber ）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（ 或者HTML ）文档。
+Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（ John Gruber ）。 它允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（ 或者 HTML ）文档。
 
 特点：
 
@@ -25,7 +23,7 @@ Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（ John 
 
 ## 常用格式
 
-- 多级标题
+- 多级标题 
 - 有序 / 无序列表
 - 表格
 - 图片
@@ -46,4 +44,3 @@ Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（ John 
 - Mermaid：[https://mermaid-js.github.io/mermaid/#/](https://mermaid-js.github.io/mermaid/#/)
 
 使用 Docsify 搭建笔记博客：[https://www.bilibili.com/video/BV1kT4y1T7wY](https://www.bilibili.com/video/BV1kT4y1T7wY)
-
