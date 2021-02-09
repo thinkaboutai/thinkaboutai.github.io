@@ -37,6 +37,10 @@ Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（ John 
 
 ## 接下来
 
+调试模式：开启调试模式对具体样式进行定制
+
+LaTex Math：[https://www.caam.rice.edu/~heinken/latex/symbols.pdf](https://www.caam.rice.edu/~heinken/latex/symbols.pdf)
+
 图表：
 
 - 序列图：[https://bramp.github.io/js-sequence-diagrams/](https://bramp.github.io/js-sequence-diagrams/)
