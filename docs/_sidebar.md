@@ -2,6 +2,10 @@
 
 - [介绍](README "Think About AI")
 
+- 电子书
+
+  - [深入理解 ES6](ebook/01_ES6/)
+
 - 公共课程
 
   - [MySQL](public/01_Mysql/)
