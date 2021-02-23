@@ -625,9 +625,15 @@ r.move();
 函数的方法
 
 ```javascript
-const r1 = Rect.call({}, 100, 80);
-const r2 = Rect.apply({}, [100, 80]);
+const r1 = {};
+Rect.call(r, 100, 80);
+const r2 = {};
+Rect.apply(r2, [100, 80]);
+
+console.log(r1, r2);
 ```
+
+`call` 和 `apply` 方法，和我们直接使用 `new` 关键字创建对象能起到相同的执行效果。
 
 #### 8.4 Value vs Reference Types
 
@@ -1041,12 +1047,197 @@ console.log(sum);
 #### 9.12 练习
 
 ```javascript
-//
+//编写一个函数，接受min、max两个参数，产生元素为min～max之间的数字的一个数组（包含边界）
+
+//编写一个函数，实现数组的includes功能
+
+//从一个数组中剔除某一个元素或某一组元素
+
+//编写一个函数，实现把arr数组中index处的元素偏移offset，其中arr、index、offset为参数
+
+//统计一个数组中某元素出现的次数
+
+//求一个数组中的最大值
+
+//定制一个商品对象数组，筛选出价格大于某值，并根据价格降序排序，最后输出满足条件的商品名称
 ```
 
 
 
 ### 10. 函数
+
+#### 10.1 函数声明与函数表达式
+
+函数声明
+
+```javascript
+function walk() {
+	console.log("walk");
+}
+```
+
+函数表达式
+
+```javascript
+let run = function () {
+	console.log("run");
+};
+
+let temp = run;
+temp();
+```
+
+
+
+> Hoisting
+
+函数声明与函数表达式在效果上是大体一致的，但是最大的区别，就在与函数声明中，函数可以在声明之前进行调用。原因就在于 Javascript 引擎在编译阶段会把函数声明提前到代码顶端，这就是 Hoisting 机制，也称为变量提升。
+
+#### 10.2 arguments
+
+Javascript 中的函数在执行时，是不关注参数的，也即我们在调用函数的时候，可以弹性的传递参数，但是根据函数的定义会有各种意想不到的结果，这也是 Javascript 语法灵活的一个体现方式。
+
+同时，我们在函数内部，可以通过 `arguments` 这个内置变量来访问参数列表
+
+```javascript
+function sum(a, b) {
+  console.log(arguments);
+	return a + b;
+}
+
+console.log(sum(1));
+console.log(sum(1, 2));
+console.log(sum(1, 2, 3));
+```
+
+`arguments` 是一个可以迭代的对象，因此我们可以使用 for-of 来进行操作
+
+```javascript
+function sum() {
+	let total = 0;
+	for (const item of arguments) total += item;
+	return total;
+}
+
+console.log(sum(1, 2, 3));
+```
+
+#### 10.3 剩余参数
+
+剩余参数语法允许我们将一个不定数量的参数表示为一个数组
+
+```javascript
+function sum(...args) {
+	return args.reduce((a, b) => a + b);
+}
+
+console.log(sum(1, 2, 3));
+```
+
+> 需要注意，剩余参数只能使用在最后一个参数上
+
+```javascript
+function sum(discount, ...args) {
+	return args.reduce((a, b) => a + b) * (1 - discount);
+}
+
+console.log(sum(0.1, 1, 2, 3));
+```
+
+#### 10.4 默认参数
+
+```javascript
+function total(price, discount = 0.1, count = 1) {
+	return price * (1 - discount) * count;
+}
+
+console.log(total(1000));
+```
+
+> 最佳实践：一旦给某一个参数设置默认值，则其后的参数也要设置。
+
+#### 10.5 Getter & Setter
+
+```javascript
+const person = {
+	firstName: "Michael",
+	lastName: "Jordan",
+	fullName() {
+		return `${this.firstName} ${this.lastName}`;
+	},
+};
+
+console.log(person.fullName());
+```
+
+在上述这个案例中，fullName 是作为一个方法进行调用的，并且不能反向设置属性的值。
+
+在 ES6 中，我们可以通过定义 Getter 来获取属性值，通过 Setter 来设置属性值。
+
+```javascript
+const person = {
+	firstName: "Michael",
+	lastName: "Jordan",
+	get fullName() {
+		return `${this.firstName} ${this.lastName}`;
+	},
+	set fullName(value) {
+		const arr = value.split(" ");
+		this.firstName = arr[0];
+		this.lastName = arr[1];
+	},
+};
+
+person.fullName = "Jack Ma";
+console.log(person.fullName);
+console.log(person);
+```
+
+#### 10.6 try-catch
+
+使用 try-catch 来对异常进行捕获
+
+```javascript
+const person = {
+	firstName: "Michael",
+	lastName: "Jordan",
+	get fullName() {
+		return `${this.firstName} ${this.lastName}`;
+	},
+	set fullName(value) {
+		if (typeof value !== "string") throw new Error("非法参数");
+		const arr = value.split(" ");
+		if (arr.length !== 2) throw new Error("信息不完整");
+		this.firstName = arr[0];
+		this.lastName = arr[1];
+	},
+};
+
+try {
+	person.fullName = null;
+} catch (e) {
+	console.error(e);
+}
+```
+
+#### 10.7 作用域
+
+使用 `let`、`const` 定义变量和常量时，这个值的作用域就是定义它的代码块。`function`、`if` 和 `for` 等形成的语句块也是同理。
+
+```javascript
+{
+  const msg = "Hello";
+}
+console.log(msg);
+```
+
+> 就近原则
+
+当变量出现同名的时候，取最近的作用域定义的变量值。
+
+> let vs var
+
+`var` 最大的特点就在于它只能被 `function` 所形成的语句块限定作用域，`ES6` 以后不再推荐使用，建议使用 `let` 和 `const`。
 
 ## Part2 -- OOP
 
