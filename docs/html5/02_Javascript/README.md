@@ -637,7 +637,7 @@ console.log(r1, r2);
 
 #### 8.4 Value vs Reference Types
 
-- Value Types / Primitive Types（ 值类型 / 基本数据类型 ）：
+- Value Types / Primitive Types（ 值类型 / 原始数据类型 / 基本数据类型 ）：
   - String / Number / Boolean / undefined / null / Symbol
 - Reference Types（ 引用类型 ）：
   - Object / Function / Array
