@@ -679,7 +679,7 @@ change(obj);
 console.log(obj);
 ```
 
-#### 8.5 对象的属性
+#### 8.5 对象的遍历
 
 我们可以使用 `for-in` 来迭代对象的所有属性
 
@@ -1238,6 +1238,8 @@ console.log(msg);
 > let vs var
 
 `var` 最大的特点就在于它只能被 `function` 所形成的语句块限定作用域，`ES6` 以后不再推荐使用，建议使用 `let` 和 `const`。
+
+#### 10.8 this
 
 ## Part2 -- OOP
 
