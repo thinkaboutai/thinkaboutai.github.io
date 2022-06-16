@@ -12,4 +12,4 @@
 
 [GitHub](https://github.com/thinkaboutai)
 [Get Started](README)
-[Wechat](https://open.work.weixin.qq.com/wwopen/sso/3rd_qrConnect?appid=ww94fe0438fd4daa33&redirect_uri=https%3A%2F%2Fwww.kdwang.com)
+[Wechat](https://open.work.weixin.qq.com/wwopen/sso/3rd_qrConnect?appid=ww94fe0438fd4daa33&redirect_uri=https%3A%2F%2Fwww.kdwang.com&usertype=member)
